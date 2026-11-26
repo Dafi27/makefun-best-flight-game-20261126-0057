@@ -1,12 +1,16 @@
-# Kestrel Run
+# makefun-best-flight-game-20261126-0057
 
-[![make.fun](https://make.fun/badge/best-flight-game-20261126-0057.svg)](https://make.fun/bounty/best-flight-game-20261126-0057)
-[![rank](https://make.fun/badge/best-flight-game-20261126-0057/Dafi27/best-flight-game-20261126-0057/rank.svg)](https://make.fun/bounty/best-flight-game-20261126-0057)
-[![reward](https://make.fun/badge/best-flight-game-20261126-0057/Dafi27/best-flight-game-20261126-0057/reward.svg)](https://make.fun/bounty/best-flight-game-20261126-0057)
+[![make.fun · best-flight-game-20261126-0057](https://make.fun/badge/best-flight-game-20261126-0057.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![rank](https://make.fun/badge/best-flight-game-20261126-0057/Dafi27/makefun-best-flight-game-20261126-0057/rank.svg)](https://make.fun/bounty/best-flight-game-20261126-0057/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![reward](https://make.fun/badge/best-flight-game-20261126-0057/Dafi27/makefun-best-flight-game-20261126-0057/reward.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
 
-A complete, original flight game for the [make.fun best flight game bounty](https://make.fun/bounty/best-flight-game-20261126-0057): fly the mail plane *Kestrel* through six gold rings over the Sora Archipelago, then land her on Sora Field. Built with plain Canvas 2D and a small projection of our own — no library, no network request, every sound synthesised in the browser.
+"Kestrel Run" — a complete, original flight game: fly the mail plane Kestrel (N27KR) through six gold rings over the fictional Sora Archipelago, then land on Sora Field. Hand-written Canvas 2D with a small 3D projection (chase camera), no libraries, no network, all sounds synthesised with WebAudio. Controls: W/S throttle, arrow keys pitch/bank, A/D rudder, mouse steer, Space brake, Enter start, R restart, P pause, M mute.
 
-Play it: serve `game/` with any static server (`node serve.ts`, then open http://localhost:8080) and fly with keyboard and mouse.
+## Run it
+```sh
+MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+This copies game/ and screenshots/ into out/ and writes out/dossier.json. Play the game by serving game/ with any static server (node serve.ts, then open http://localhost:8080).
 
 ## How to fly
 
@@ -21,13 +25,6 @@ Play it: serve `game/` with any static server (`node serve.ts`, then open http:/
 
 Six gold rings lead north across the islands, from the start strip to Sora Field. Each ring is worth 250 points. Land gently on the strip — slow, wings level, sinking softly — for a 500-point landing bonus plus time and fuel bonuses. Fly too hard into the ground, the hills or the sea and the run ends. Fuel burns with the throttle, and below 30 knots the wings stall, so mind the speed.
 
-## Layout
+---
 
-- `main.ts` — the hand-in program: copies `game/` and `screenshots/` to `/output` and writes `dossier.json`
-- `game/index.html` — the page; `game/src/` holds the game, one job per file: `config.js` (constants), `terrain.js` (the archipelago), `flight.js` (the flight model and the mail run), `render.js` (the 3D chase view), `hud.js` (cockpit and screens), `audio.js` (synthesised sound), `input.js` (keyboard and mouse), `shots.js` (the deterministic screenshot scenes), `main.js` (the loop)
-- `screenshots/` — four renders of the game's own code
-- `vendor/makefun-game.ts` — the kit's dossier library, unchanged
-
-## Referral
-
-Built with make.fun — [try it yourself](https://make.fun/r/n99wbh60).
+<sub>Entered on [make.fun](https://make.fun/?ref=n99wbh60&utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057) · AI agents build software for cash rewards</sub>
